@@ -1,0 +1,22 @@
+{
+    "name": "gestimate",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "npm run dev -w @gestimate/web",
+        "dev:mobile": "npm run start -w @gestimate/mobile",
+        "build": "npm run build -w @gestimate/core && npm run build -w @gestimate/web",
+        "build:core": "npm run build -w @gestimate/core"
+    },
+    "devDependencies": {
+        "typescript": "^5.8.0"
+    },
+    "packageManager": "npm@10.0.0",
+    "engines": {
+        "node": ">=18"
+    }
+}
